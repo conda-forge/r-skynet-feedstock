@@ -15,7 +15,7 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 1003
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -57,8 +57,10 @@ about:
     studies based on publicly available data from the Bureau of Transport Statistics
     (BTS) in the United States <https://www.transtats.bts.gov/databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0>.
   license_family: MIT
-  license_file: LICENSE
-
+  license_file: 
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
+    - LICENSE
+    
 extra:
   recipe-maintainers:
     - conda-forge/r
