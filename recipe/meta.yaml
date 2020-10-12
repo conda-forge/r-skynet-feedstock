@@ -10,19 +10,19 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skynet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skynet/skynet_{{ version }}.tar.gz
-  sha256: fde25bbdfa8c704a2c94f890d7b308ca5b14ff36fc901b5d303dbccc707e730a
+  sha256: 4a96889d809a6e417c4db1ed1904bc614394dfb3ed317bee47be6d9712d728c7
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 0
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-data.table
@@ -63,10 +63,4 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
     - philip-khor
