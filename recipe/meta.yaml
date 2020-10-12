@@ -27,20 +27,24 @@ requirements:
     - r-base
     - r-data.table
     - r-dplyr
+    - r-geosphere
     - r-ggplot2
     - r-ggrepel
     - r-httr
     - r-igraph
+    - r-leaflet
     - r-maps
     - r-stringr
   run:
     - r-base
     - r-data.table
     - r-dplyr
+    - r-geosphere
     - r-ggplot2
     - r-ggrepel
     - r-httr
     - r-igraph
+    - r-leaflet
     - r-maps
     - r-stringr
 
