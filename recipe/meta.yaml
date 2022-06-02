@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skynet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skynet/skynet_{{ version }}.tar.gz
-  sha256: 4a96889d809a6e417c4db1ed1904bc614394dfb3ed317bee47be6d9712d728c7
+  sha256: 7df92f52db49da617b7992a876285c5f20c2884f97fae56a8b5be731cf6fd6f6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -56,9 +56,7 @@ test:
 about:
   home: https://github.com/FilipeamTeixeira/skynet
   license: MIT
-  summary: A flexible tool that allows generating bespoke air transport statistics for urban
-    studies based on publicly available data from the Bureau of Transport Statistics
-    (BTS) in the United States <https://www.transtats.bts.gov/databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0>.
+  summary: A flexible tool that allows generating bespoke air transport statistics for urban studies based on publicly available data from the Bureau of Transport Statistics (BTS) in the United States <https://www.transtats.bts.gov/databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0>.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
