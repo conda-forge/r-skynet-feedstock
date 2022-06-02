@@ -23,8 +23,10 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-rcurl
     - r-data.table
     - r-dplyr
     - r-geosphere
@@ -37,6 +39,7 @@ requirements:
     - r-stringr
   run:
     - r-base
+    - r-rcurl
     - r-data.table
     - r-dplyr
     - r-geosphere
