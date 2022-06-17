@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skynet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skynet/skynet_{{ version }}.tar.gz
-  sha256: 7df92f52db49da617b7992a876285c5f20c2884f97fae56a8b5be731cf6fd6f6
+  sha256: 310db17bef0a770856e067f8b84d3765b67c0077bac8deb8ea1a6230f3b84521
 
 build:
   merge_build_host: true  # [win]
