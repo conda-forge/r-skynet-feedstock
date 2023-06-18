@@ -1,11 +1,11 @@
-About r-skynet
-==============
+About r-skynet-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-skynet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/FilipeamTeixeira/skynet
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-skynet-feedstock/blob/main/LICENSE.txt)
 
 Summary: A flexible tool that allows generating bespoke air transport statistics for urban studies based on publicly available data from the Bureau of Transport Statistics (BTS) in the United States <https://www.transtats.bts.gov/databases.asp?Mode_ID=1&Mode_Desc=Aviation&Subject_ID2=0>.
 
