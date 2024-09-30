@@ -1,6 +1,5 @@
 {% set version = "1.4.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-skynet
@@ -13,8 +12,7 @@ source:
   sha256: 310db17bef0a770856e067f8b84d3765b67c0077bac8deb8ea1a6230f3b84521
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
